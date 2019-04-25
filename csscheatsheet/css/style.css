@@ -174,3 +174,19 @@ a:hover {
     position: fixed;
     top:400px;
 }
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(4){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: gray;
+}
