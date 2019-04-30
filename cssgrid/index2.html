@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS GRID</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /*
+            grid-template-columns: 1fr 2fr 1fr;
+            */
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:1em;
+            /*
+            grid-auto-rows: 100px;
+            */
+            grid-auto-rows: minmax(100px, auto);
+           
+
+        }
+        .nested{
+            display:grid;
+            grid-auto-rows:60px;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 1em;
+            grid-row-gap:1em;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+
+        }
+        .nested > div{
+            border: #333 1px solid;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+            Work hard
+        </div>
+        <div class="nested">
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+            <div>Work hard</div>
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+        <div>
+            Work hard
+        </div>
+    </div>
+</body>
+</html>
